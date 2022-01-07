@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
+//BruteForce Method
 //         int a,b;
 //         for(int i=0; i < nums.size();i++){
 //             a = nums[i];
@@ -15,7 +16,8 @@ public:
              
 //         }
 //         return false;
-        
+ 
+//Sorting Method
         sort(nums.begin(),nums.end());
         for (int i =1;i<nums.size();i++){
             if(nums[i-1] == nums[i]){
@@ -26,3 +28,7 @@ public:
     }
         
 };
+
+
+
+//We could also use hashset method.
