@@ -15,7 +15,6 @@ public:
             }
         }
         
-        //Now check and add all the numbers which are missing (as positive).
         return MissingNumbers;
     }
 };
